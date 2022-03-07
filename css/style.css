@@ -1,0 +1,96 @@
+
+nav {
+    border: 3px solid black;
+}
+
+nav li {
+    padding: 12px;
+    background-color: lightcoral;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+ ul > .active > a{
+    background-color: whitesmoke;
+    font-weight: bold;
+    border: 2px solid black;
+    text-decoration: underline;
+    color: orange;
+    font-size: large;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 12px 0;
+    padding: 12px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px;
+    margin: 3px;
+}
+
+header {
+    border: solid black;
+    margin: 5px;
+    background-color: #FFA500;
+}
+
+main {
+    border: solid black;
+    margin: 5px;
+    padding: 12px;
+    background-color: #FFA500;
+}
+
+body {
+    border: 3px solid black;
+    margin: 5px;
+    background: #FFA500 url(../images/vets.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Urbanist', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    padding: 3px;
+}
+
+footer p {
+    border: none;
+}
+
+footer {
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+img {
+    margin: 12px;
+    width: 325px;
+    border: 8px solid darkgoldenrod;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+img:hover {
+    filter: grayscale();
+    border: dashed;
+}
+
+.fas {
+    size: 5px;
+    font-style: normal;
+    color: black;
+    border: 1px solid grey;
+}
