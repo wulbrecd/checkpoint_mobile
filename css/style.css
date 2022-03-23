@@ -4,6 +4,9 @@ nav {
 }
 
 nav li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 12px;
     background-color: lightcoral;
 }
@@ -13,13 +16,14 @@ nav li a {
     color: black;
 }
 
- ul > .active > a{
+nav > ul > li.active {
     background-color: whitesmoke;
     font-weight: bold;
     border: 2px solid black;
     text-decoration: underline;
-    color: orange;
-    font-size: large;
+    text-transform: uppercase;
+    color: black;
+    font-size: x-large;
 }
 
 h1 {
@@ -74,14 +78,26 @@ footer {
     margin-top: 10px;
 }
 
-img {
-    margin: 12px;
-    width: 325px;
-    border: 8px solid darkgoldenrod;
-    padding: 3px;
+div {
+    border: 2px solid black;
     border-radius: 5px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 12px;
+    padding: 3px;
 }
 
+div > p {
+    display: flex;
+    flex-direction: row;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
 
 img:hover {
     filter: grayscale();
@@ -93,4 +109,19 @@ img:hover {
     font-style: normal;
     color: black;
     border: 1px solid grey;
+}
+
+
+#fs-frm-inputs{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px){
+    .images {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
