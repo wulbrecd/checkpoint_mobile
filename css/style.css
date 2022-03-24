@@ -43,14 +43,14 @@ h2 {
 }
 
 header {
-    border: solid black;
+    /* border: solid black;
     margin: 5px;
-    background-color: #FFA500;
+    background-color: #FFA500; */
 }
 
 main {
-    border: solid black;
-    margin: 5px;
+    /* border: solid black; */
+    /* margin: 5px; */
     padding: 12px;
     background-color: #FFA500;
 }
@@ -76,7 +76,7 @@ footer p {
 
 footer {
     background-color: cornflowerblue;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     padding: 10px;
     margin-top: 10px;
 }
@@ -88,6 +88,7 @@ div {
     margin: 12px;
     padding: 3px;
     display: flex;
+    flex-direction: column;
     width: 1fr;
 }
 
@@ -179,6 +180,10 @@ img:hover {
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+.dotList {
+    justify-content: center;
 }
 
 @keyframes fade {
